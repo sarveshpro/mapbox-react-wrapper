@@ -5,6 +5,8 @@ This is a React wrapper for Mapbox GL JS. I created this wrapper for 2 reasons:
 1. Existing wrappers are not well maintained and are not up to date with the latest Mapbox GL JS API.
 2. I wanted to support `mapbox-gl@v2` while still supporting `mapbox-gl@v1` because it's free.
 
+![video](https://user-images.githubusercontent.com/27153515/197651279-6230ee88-4cbf-490c-97e7-529eb603f362.gif)
+
 ## Installation
 
 ```bash
