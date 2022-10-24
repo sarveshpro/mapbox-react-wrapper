@@ -1,6 +1,6 @@
 {
   "name": "mapbox-react-wrapper",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "react wrapper for mapbox-gl",
   "main": "dist/index.js",
   "type": "module",
