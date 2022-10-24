@@ -4,6 +4,24 @@
   "description": "react wrapper for mapbox-gl",
   "main": "dist/index.js",
   "type": "module",
+  "keywords": [
+    "mapbox",
+    "react",
+    "wrapper",
+    "mapbox-gl",
+    "mapbox-gl-js",
+    "react-mapbox-gl",
+    "react-map-gl"
+  ],
+  "homepage": "https://github.com/sarveshpro/mapbox-react-wrapper/#readme",
+  "bugs": {
+    "url": "https://github.com/sarveshpro/mapbox-react-wrapper/issues",
+    "email": "hello@sarvesh.pro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarveshpro/mapbox-react-wrapper.git"
+  },
   "scripts": {
     "test": "echo \"Note: no test specified\" && exit 0",
     "clean": "rm -rf dist",
