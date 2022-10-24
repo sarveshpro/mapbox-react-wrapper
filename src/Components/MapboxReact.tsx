@@ -1,6 +1,8 @@
 import React, { CSSProperties } from 'react'
 import mapboxgl from 'mapbox-gl'
 
+// TODO: move types to separate file
+
 // make container optional in mapbox options
 type CustomMapboxOptions = Omit<mapboxgl.MapboxOptions, 'container'>
 
