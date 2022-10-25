@@ -83,7 +83,7 @@ Contributions are welcome! Please open an issue or a PR.
 
 ## :heart: of Open Source
 
-This project is part of the [Open Source Initiative](https://opensource.org/).
+This project is part of the [Open Source Initiative](https://opensource.org/osd).
 
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
