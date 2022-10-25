@@ -55,3 +55,38 @@ export default App;
 | showMapControls | boolean                 | Whether to show map controls.                                       |
 | markers         | CustomMarkerProps[]     | Array of markers.                                                   |
 | flyTo           | CustomFlyToOptions      | Fly to options.                                                     |
+
+## Roadmap till v0.1.0
+
+- [x] globe projection with `mapbox-gl@v2`
+- [x] free usage with `mapbox-gl@v1`
+- [x] custom map styles
+- [x] default markers
+- [x] partial support for raster layers
+- [x] fly to options
+- [x] idle spin
+- [x] fog support with `mapbox-gl@v2`
+- [ ] custom markers and popups
+- [ ] geojson layers
+- [ ] raster layers
+- [ ] vector layers
+- [ ] events
+- [ ] clustering
+
+## Contributing
+
+Contributions are welcome! Please open an issue or a PR.
+
+## License
+
+[MIT](https://github.com/sarveshpro/mapbox-react-wrapper/blob/main/LICENSE)
+
+## :heart: of Open Source
+
+This project is part of the [Open Source Initiative](https://opensource.org/).
+
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
+## Disclaimer
+
+This project is not affiliated with Mapbox in any way. Mapbox is a registered trademark of [Mapbox, Inc.](https://www.mapbox.com/). I am using Mapbox's APIs and services in the spirit of Open Source. Any issues with the usage of Mapbox's APIs and services should be directed to [Mapbox, Inc.](https://www.mapbox.com/).
