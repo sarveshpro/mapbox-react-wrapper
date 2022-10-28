@@ -1,5 +1,13 @@
 # Better React Wrapper for Mapbox GL
 
+[![Node.js Package](https://github.com/sarveshpro/mapbox-react-wrapper/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/sarveshpro/mapbox-react-wrapper/actions/workflows/npm-publish.yml)
+[![npm version](https://img.shields.io/npm/v/mapbox-react-wrapper.svg?style=flat)](https://www.npmjs.com/package/mapbox-react-wrapper)
+![npm bundle size](https://img.shields.io/bundlephobia/min/mapbox-react-wrapper)
+[![npm downloads](https://img.shields.io/npm/dm/mapbox-react-wrapper.svg)](https://www.npmjs.com/package/mapbox-react-wrapper)
+[![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://github.com/microsoft/TypeScript)
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/mapbox-react-wrapper/peer/mapbox-gl)
+![GitHub](https://img.shields.io/github/license/sarveshpro/mapbox-react-wrapper)
+
 This is a React wrapper for Mapbox GL JS. I created this wrapper for 2 reasons:
 
 1. Existing wrappers are not well maintained and are not up to date with the latest Mapbox GL JS API.
