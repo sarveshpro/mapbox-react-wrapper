@@ -64,6 +64,94 @@ export default App;
 | markers         | CustomMarkerProps[]     | Array of markers.                                                   |
 | flyTo           | CustomFlyToOptions      | Fly to options.                                                     |
 
+## Props supported in `mapbox-gl@v2`
+
+| Prop       | Type           | Description                 |
+| ---------- | -------------- | --------------------------- |
+| projection | ProjectionLike | Projection used by the map. |
+| fog        | FogOptions     | Fog options.                |
+
+## Examples
+
+### 3D Globe Projection
+
+Works with `mapbox-gl@v2`
+
+```jsx
+import React from "react";
+import { MapboxReact } from "mapbox-react-wrapper";
+
+const App = () => {
+  return (
+    <MapboxReact
+      accessToken={"YOUR_ACCESS_TOKEN"} // not required if you are on mapbox-gl@v1 and aren't using mapbox's map styles
+      mapStyle="mapbox://styles/mapbox/streets-v11" // url or mapbox style object
+      mapboxOptions={{
+        center: [0, 0],
+        zoom: 1.5,
+        projection: {
+          name: "globe",
+        },
+      }}
+      fog={{
+        range: [-1, 2],
+        "horizon-blend": 0.3,
+        color: "#242B4B",
+        "high-color": "#161B36",
+        "space-color": "#0B1026",
+        "star-intensity": 0.8,
+      }}
+    />
+  );
+};
+
+export default App;
+```
+
+### Free Mapbox GL JS
+
+Using open satellite layer from arcgis instead of mapbox map styles and `mapbox-gl@v1` where you don't need an access token if no mapbox APIs are being used. You can also use map style objects which follow [Mapbox Style Spec](https://docs.mapbox.com/mapbox-gl-js/style-spec/) like for example from ArcGIS, which you can store with your source code and import as a JSON Object. A good example of this is in [Planet WebApp](https://github.com/Plant-for-the-Planet-org/planet-webapp/blob/develop/src/utils/maps/getMapStyle.ts) & [Usage with react-mapbox-gl](https://github.com/Plant-for-the-Planet-org/planet-webapp/blob/a382a507af22034ff03f27d08cafd8790a96295c/src/features/user/RegisterTrees/RegisterTrees/StaticMap.tsx#L86-L93), [Example Mapstyle Object](https://github.com/Plant-for-the-Planet-org/planet-webapp/blob/develop/public/data/styles/OpenStreetMap.json). It requires a little bit of tweeking but it works. Maybe I can include support for ArcGIS styles in future versions. Best part is with `mapbox-gl@v1` you can use it for free. Don't forget to add proper attribution when using third party map styles.
+
+```jsx
+import React from "react";
+import { MapboxReact } from "mapbox-react-wrapper";
+
+const App = () => {
+  return (
+    <MapboxReact
+      mapboxOptions={{
+        center: [0, 0],
+        zoom: 1.5,
+      }}
+      // arcgis satellite layer
+      rasterSourceLayers={[
+        {
+          source: {
+            id: "satellite-source",
+            type: "raster",
+            tiles: [
+              "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            ],
+            tileSize: 256,
+          },
+          layers: [
+            {
+              id: "raster-layer",
+              type: "raster",
+              source: "satellite-source",
+              minzoom: 0,
+              maxzoom: 22,
+            },
+          ],
+        },
+      ]}
+    />
+  );
+};
+
+export default App;
+```
+
 ## Roadmap till v0.1.0
 
 - [x] globe projection with `mapbox-gl@v2`
@@ -98,3 +186,7 @@ This project is part of the [Open Source Initiative](https://opensource.org/osd)
 ## Disclaimer
 
 This project is not affiliated with Mapbox in any way. Mapbox is a registered trademark of [Mapbox, Inc.](https://www.mapbox.com/). I am using Mapbox's APIs and services in the spirit of Open Source. Any issues with the usage of Mapbox's APIs and services should be directed to [Mapbox, Inc.](https://www.mapbox.com/).
+
+```
+
+```
