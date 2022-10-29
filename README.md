@@ -186,7 +186,3 @@ This project is part of the [Open Source Initiative](https://opensource.org/osd)
 ## Disclaimer
 
 This project is not affiliated with Mapbox in any way. Mapbox is a registered trademark of [Mapbox, Inc.](https://www.mapbox.com/). I am using Mapbox's APIs and services in the spirit of Open Source. Any issues with the usage of Mapbox's APIs and services should be directed to [Mapbox, Inc.](https://www.mapbox.com/).
-
-```
-
-```
